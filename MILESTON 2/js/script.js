@@ -40,7 +40,11 @@ const app = new Vue({
     ]
 },
 
-
+    methods: {
+        textRemove(index){
+            this.items.splice(index, 1);
+        }
+    },
 
 
 })
