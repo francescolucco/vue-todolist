@@ -18,23 +18,23 @@
     <h1>Before I Die...</h1>
     <input 
       type="text"
-      placeholder="Cose da fare">
-    <ul>
-      <li>
-        <p>sdsfsf</p>
-        <i class="fa-solid fa-xmark"></i>
-      </li>
-      <li>
+      placeholder="Cose da fare prima di morire">
+      <ul>
+        <li 
+        v-for='(item, index) in items'
+        @click='item.done = !item.done'
+        >
         <p
-          class="">
-            sdsfsf
-        </p>
-        <i class="fa-solid fa-xmark"></i>
-      </li>
-    </ul>
-
-
-    
+        :class="{underline: item.done === true}">
+        {{item.text}}
+      </p>
+      <i 
+      class="fa-solid fa-xmark"></i>
+    </li>
+  </ul>
+  
+  
+  
   </div>
   <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
   <script src="js/script.js"></script>
