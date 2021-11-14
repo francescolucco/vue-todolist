@@ -63,10 +63,8 @@ li{
 ul i {
   margin: auto 5px;
   color: rgba(255, 255, 255, 0.5);
-
 }
 p.underline{
   text-decoration: line-through;
   color: rgba(255, 255, 255, 0.4);
-
 }

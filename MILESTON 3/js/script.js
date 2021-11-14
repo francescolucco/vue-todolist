@@ -38,18 +38,36 @@ const app = new Vue({
                 done: false
             }
     ],
-    stringToDO: '',
+    stringToDo: '',
+
+    error: false,
 },
 
     //Funzione per eliminare un oggetto dall'array
     methods: {
         textRemove(index){
             this.items.splice(index, 1);
+        },
+        insertToDo(){
+            oggettoVuoto = {
+                text: '',
+                done: false
+            };
+            console.log(oggettoVuoto);
+            if(this.stringToDo.length < 3){
+                this.error = true;
+                setTimeout(()=>{
+                    this.error = false
+                }, 3000)
+            }else{
+                oggettoVuoto.text = this.stringToDo;
+                this.items.push(oggettoVuoto),
+                console.log(this.items);
+                this.stringToDo = ''
+            }
         }
     },
 
     //creo una funzione per inserire i dati inseriti nell'area input nell'arrey di oggetti
-    
-
 })
 
