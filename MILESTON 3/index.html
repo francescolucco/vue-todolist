@@ -13,16 +13,17 @@
 <body>
   <div 
     id="app"
-    class="d-flex justify-content-center align-items-center      flex-column"
+    class="d-flex justify-content-center align-items-center flex-column"
     >
     <h1>Before I Die...</h1>
-    <div class="box-input">
+    <div class="box-input d-flex justify-content-center align-items-center">
       <input 
         v-model='stringToDO'
         type="text"
         placeholder="Cose da fare prima di morire">
       <div class="btn btn-primary">Play</div>
     </div>
+    <h4>Inserire un testo di almeno 3 caratteri</h4>
       <ul>
         <li 
         v-for='(item, index) in items'

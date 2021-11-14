@@ -49,6 +49,7 @@ const app = new Vue({
     },
 
     //creo una funzione per inserire i dati inseriti nell'area input nell'arrey di oggetti
+    
 
 })
 

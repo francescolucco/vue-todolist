@@ -21,17 +21,29 @@ h1{
   font-weight: bolder;
   margin-bottom: 40px;
 }
-input{
+.box-input{
   width: 100%;
+}
+input{
+  width: 80%;
   line-height: 30px;
   padding: 15px;
   background-color: rgba(255, 255, 255, 0.7);
   border: none;
   border-radius: 15px;
+  margin-right: 20px;
+  
 }
 input:over{
   background-color: white;
   border: none;
+}
+.btn{
+  width: 15%;
+}
+h4{
+  font-size: 15px;
+  margin-top: 4px;
 }
 ul{
   margin: 25px 0px;
