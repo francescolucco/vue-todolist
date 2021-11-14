@@ -16,9 +16,13 @@
     class="d-flex justify-content-center align-items-center      flex-column"
     >
     <h1>Before I Die...</h1>
-    <input 
-      type="text"
-      placeholder="Cose da fare prima di morire">
+    <div class="box-input">
+      <input 
+        v-model='stringToDO'
+        type="text"
+        placeholder="Cose da fare prima di morire">
+      <div class="btn btn-primary">Play</div>
+    </div>
       <ul>
         <li 
         v-for='(item, index) in items'
